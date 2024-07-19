@@ -13,7 +13,7 @@ Route::get('/user', function (Request $request) {
 Route::get("/test", function() {
     $users = User::all();
     return response()->json([
-        "message" => "Hello World",
+        "message" => "Hello World-1",
         "users" => $users
     ]);
 });
