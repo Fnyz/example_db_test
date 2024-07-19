@@ -9,7 +9,7 @@ $app = require_once __DIR__ . '/../bootstrap/app.php';
 // Create an instance of the HTTP kernel
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
-// Create a request object (you need to decide what request data to use)
+// Create a request object
 $request = Illuminate\Http\Request::capture();
 
 // Handle the request through the kernel
