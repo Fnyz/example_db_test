@@ -24,6 +24,6 @@ Route::get('/test-db-connection', function () {
         DB::connection()->getPdo();
         return 'Database connection is successful!';
     } catch (\Exception $e) {
-        return 'Failed to connect to the database: ' . $e->getMessage();
+        return 'Failed to connect to the database:: ' . $e->getMessage();
     }
 });
